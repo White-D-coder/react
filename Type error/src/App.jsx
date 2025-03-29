@@ -1,9 +1,9 @@
-import './App.css'; 
-import Alphabet from './components/Alphabet';
+import { useState } from 'react'
 import Home from './components/Home';
 import PlayGame from './components/PlayGame';
 import EndGame from './components/EndGame';
-import React, { useEffect, useState, useCallback} from 'react';
+import './App.css'
+import React, { useEffect} from 'react';
 function App() {
 
   const [statusGame, setStatusGame] = useState(null);
@@ -60,5 +60,4 @@ function App() {
     </>
   )
 }
-
-export default App;
+export default App
