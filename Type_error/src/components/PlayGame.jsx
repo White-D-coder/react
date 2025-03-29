@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 const PlayGame = ({ onChangeScore}) => {
-  const [defaultData] = useState('The devil lurks in the void between the stars, where space bends, time warps, and no soul can hear your screams.');
+  const [defaultData] = useState('In the cold abyss of space, where stars flicker like dying embers, the devil waits in the shadows of the unknown. Time twists, reality fractures, and whispers of forgotten souls echo through the void. Out here, beyond the reach of light, even the bravest must face the darkness within.');
   const [dataTyping, setDataTyping] = useState([]);
   const [textTyping, setTextTyping] = useState({
     value: '',
