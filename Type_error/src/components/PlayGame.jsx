@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 const PlayGame = ({ onChangeScore}) => {
-  const [defaultData] = useState('The quick brown fox jumps over the lazy dog while solving complex puzzles efficiently.');
+  const [defaultData] = useState('The devil lurks in the void between the stars, where space bends, time warps, and no soul can hear your screams.');
   const [dataTyping, setDataTyping] = useState([]);
   const [textTyping, setTextTyping] = useState({
     value: '',
@@ -23,7 +23,10 @@ const PlayGame = ({ onChangeScore}) => {
         addWord();
         setTextTyping({...textTyping, position: 0});
       }
-      
+      const inputElement = document.querySelector('.inputForm input');
+      if (inputElement) {
+        inputElement.setAttribute('placeholder', 'Type your note');
+      }
     }, [textTyping.position, dataTyping.length, defaultData, textTyping])
     const handleChangeTyping = e => {
         const valueInput = e.target.value;
