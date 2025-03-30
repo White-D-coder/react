@@ -4,8 +4,12 @@ import PlayGame from './components/PlayGame';
 import EndGame from './components/EndGame';
 import './App.css'
 import React, { useEffect} from 'react';
+import spooky from './spooky.mp3';
 function App() {
-
+  const audio = new Audio(spooky);
+  audio.loop = true;
+  audio.volume = 0.3;
+  audio.play();
   const [statusGame, setStatusGame] = useState(null);
   const [score, setScore] = useState(null);
   
